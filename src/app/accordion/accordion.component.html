@@ -1,15 +1,15 @@
-<mat-accordion multi>
-  <mat-expansion-panel class="panela" *ngFor="let accordion of accordions">
+<mat-accordion>
+  <mat-expansion-panel class="panel" *ngFor="let accordion of accordions">
     <mat-expansion-panel-header>
       <mat-panel-title>{{ accordion.title }}</mat-panel-title>
     </mat-expansion-panel-header>
-    <div>
-      <mat-accordion class="example-headers-align" multi>
+    <div class="mat-expansion-panel-body-custom">
+      <mat-accordion class="example-headers-align">
         <mat-expansion-panel *ngFor="let content of accordion.contents">
           <mat-expansion-panel-header>
             {{ content.title }}
           </mat-expansion-panel-header>
-          <div class="panela">
+          <div>
             <p [innerHTML]="content.data" id="{{ content.title }}"></p>
             <cite class="flex-end" *ngIf="content.author">
               <a href="{{ content.author.link }}" target="_blank">{{

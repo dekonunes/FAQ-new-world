@@ -1,4 +1,4 @@
-import { Accordion } from '../accordion/accordion.interface';
+import { Accordion } from '../../accordion/accordion.interface';
 
 export const dentist: Accordion = {
   title: 'Dentista',

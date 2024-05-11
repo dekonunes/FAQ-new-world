@@ -1,4 +1,8 @@
-::ng-deep .panela .mat-expansion-panel-header {
-    color: blue;
-  }
-  
+::ng-deep .panel {
+  background: #5d5b5b !important;
+}
+
+::ng-deep .mat-expansion-panel-body-custom {
+  margin: 0 -5px !important; 
+}
+

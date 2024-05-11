@@ -1,3 +1,4 @@
+import { LanguageService } from './../shared/language.service';
 import { Component, OnInit } from '@angular/core';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
@@ -6,6 +7,7 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import { AccordionService } from './accordion.service';
 import { Accordion } from './accordion.interface';
 import { CommonModule } from '@angular/common';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-accordion',
@@ -22,13 +24,33 @@ import { CommonModule } from '@angular/common';
 })
 export class AccordionComponent implements OnInit {
   accordions: Accordion[] | undefined;
+  language: string = '';
+  private subscription = new Subscription();
 
-  constructor(private accordionService: AccordionService) {}
+  constructor(
+    private languageService: LanguageService,
+    private accordionService: AccordionService
+  ) {
+    this.subscription = this.languageService.currentLanguage.subscribe(
+      (language) => {
+        this.language = language;
+      }
+    );
+  }
 
   ngOnInit() {
-    this.accordionService.getAccordionData().subscribe({
-      next: (response) => (this.accordions = response),
-      error: (err) => console.error('Error fetching accordion data', err),
-    });
+    this.subscription.add(
+      this.languageService.currentLanguage.subscribe((language) => {
+        this.accordionService.getAccordionData(language).subscribe({
+          next: (data) => (this.accordions = [...data]),
+          error: (error) =>
+            console.error('Error fetching accordion data:', error),
+        });
+      })
+    );
+  }
+
+  ngOnDestroy() {
+    this.subscription.unsubscribe();
   }
 }

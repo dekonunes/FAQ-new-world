@@ -1,0 +1,14 @@
+<div class="header space-around">
+  <span class="header--text">FAQ-Australia.com</span>
+  <i *ngIf="settings">settings</i>
+  <mat-select
+    class="header--select"
+    [(ngModel)]="selectedLanguage"
+    (ngModelChange)="onLanguageChange($event)"
+  >
+    <mat-option value="en-US">English</mat-option>
+    <mat-option value="pt-BR">Portugues - BR</mat-option>
+    <mat-option value="es-CO">Spanish</mat-option>
+    <mat-option value="hi-IN">Hindi</mat-option>
+  </mat-select>
+</div>
