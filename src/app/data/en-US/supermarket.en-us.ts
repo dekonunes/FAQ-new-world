@@ -1,6 +1,7 @@
 import { Accordion } from '../../accordion/accordion.interface';
 
 export const supermarket: Accordion = {
+  index: 'supermarket',
   title: 'Supermarkets',
   contents: [
     {
@@ -74,6 +75,17 @@ export const supermarket: Accordion = {
         {
           title: 'iOS',
           url: 'https://apps.apple.com/au/app/frugl-grocery-price-comparison/id1496295329',
+        },
+      ],
+    },
+    {
+      title: 'Marley Spoon & Hello Fresh',
+      data: `Simplifying home cooking by delivering at home weekly boxes containing step-by-step recipes along with the necessary ingredients pre-measured. Its service is designed to cater to individuals, couples, and families who are looking for an easy and convenient way to cook home meals. <br><br>
+        <li>Customers can choose from a variety of plans based on their dietary preferences, such as family-friendly, low-calorie, or vegetarian, and select the number of meals and servings per week.</li>`,
+      links: [
+        {
+          title: 'Discount coupom',
+          url: 'https://marleyspoon.com.au/v/REF-W--L3TA9JG1-20240512',
         },
       ],
     },

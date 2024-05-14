@@ -6,6 +6,7 @@ import {
   accordions_en_us,
   accordions_hi_in,
   accordions_es_co,
+  accordions_zn_cn,
 } from './accordion.mock';
 
 @Injectable({
@@ -24,6 +25,8 @@ export class AccordionService {
         return of(accordions_es_co);
       case 'hi-IN':
         return of(accordions_hi_in);
+      case 'zh-CN':
+        return of(accordions_zn_cn);
       default:
         return of([]);
     }

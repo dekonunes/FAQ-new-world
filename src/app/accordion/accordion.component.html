@@ -1,32 +1,40 @@
-<mat-accordion>
-  <mat-expansion-panel class="panel" *ngFor="let accordion of accordions">
-    <mat-expansion-panel-header>
-      <mat-panel-title>{{ accordion.title }}</mat-panel-title>
-    </mat-expansion-panel-header>
-    <div class="mat-expansion-panel-body-custom">
-      <mat-accordion class="example-headers-align">
-        <mat-expansion-panel *ngFor="let content of accordion.contents">
-          <mat-expansion-panel-header>
-            {{ content.title }}
-          </mat-expansion-panel-header>
-          <div>
-            <p [innerHTML]="content.data" id="{{ content.title }}"></p>
-            <cite class="flex-end" *ngIf="content.author">
-              <a href="{{ content.author.link }}" target="_blank">{{
-                content.author.name
-              }}</a>
-            </cite>
-            <div class="space-around" *ngIf="content.links">
-              <a
-                *ngFor="let link of content.links"
-                href="{{ link.url }}"
-                target="_blank"
-                >{{ link.title }}</a
-              >
+<div class="accordion">
+  <mat-accordion>
+    <mat-expansion-panel
+      class="panel"
+      *ngFor="let accordion of accordions"
+      [expanded]="
+        accordion?.index?.toLowerCase() === params['item'].toLowerCase()
+      "
+    >
+      <mat-expansion-panel-header>
+        <mat-panel-title>{{ accordion.title }}</mat-panel-title>
+      </mat-expansion-panel-header>
+      <div class="mat-expansion-panel-body-custom">
+        <mat-accordion class="example-headers-align">
+          <mat-expansion-panel *ngFor="let content of accordion.contents">
+            <mat-expansion-panel-header>
+              {{ content.title }}
+            </mat-expansion-panel-header>
+            <div>
+              <p [innerHTML]="content.data" id="{{ content.title }}"></p>
+              <cite class="flex-end" *ngIf="content.author">
+                <a href="{{ content.author.link }}" target="_blank">{{
+                  content.author.name
+                }}</a>
+              </cite>
+              <div class="space-around" *ngIf="content.links">
+                <a
+                  *ngFor="let link of content.links"
+                  href="{{ link.url }}"
+                  target="_blank"
+                  >{{ link.title }}</a
+                >
+              </div>
             </div>
-          </div>
-        </mat-expansion-panel>
-      </mat-accordion>
-    </div>
-  </mat-expansion-panel>
-</mat-accordion>
+          </mat-expansion-panel>
+        </mat-accordion>
+      </div>
+    </mat-expansion-panel>
+  </mat-accordion>
+</div>
