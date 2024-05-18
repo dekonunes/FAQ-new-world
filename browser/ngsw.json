@@ -1,0 +1,83 @@
+{
+  "configVersion": 1,
+  "timestamp": 1716018420197,
+  "index": "/FAQ-new-world/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/FAQ-new-world/chunk-OVAMM3VU.js",
+        "/FAQ-new-world/chunk-VSIMYE2I.js",
+        "/FAQ-new-world/favicon.ico",
+        "/FAQ-new-world/index.html",
+        "/FAQ-new-world/main-TS5BHVNG.js",
+        "/FAQ-new-world/manifest.webmanifest",
+        "/FAQ-new-world/polyfills-S3BTP7ME.js",
+        "/FAQ-new-world/styles-4BEHK6JF.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/FAQ-new-world/assets/icons/icon-128x128.png",
+        "/FAQ-new-world/assets/icons/icon-144x144.png",
+        "/FAQ-new-world/assets/icons/icon-152x152.png",
+        "/FAQ-new-world/assets/icons/icon-192x192.png",
+        "/FAQ-new-world/assets/icons/icon-384x384.png",
+        "/FAQ-new-world/assets/icons/icon-512x512.png",
+        "/FAQ-new-world/assets/icons/icon-72x72.png",
+        "/FAQ-new-world/assets/icons/icon-96x96.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/FAQ-new-world/assets/icons/icon-128x128.png": "f912963bdc6d5a38d8f1dd0afbaab2ce8d657acb",
+    "/FAQ-new-world/assets/icons/icon-144x144.png": "b155fd5f2fd5d2ea7760721063003c4cd95fd783",
+    "/FAQ-new-world/assets/icons/icon-152x152.png": "eae6e0f0c8afb8aaae339e2a569b43e9238e5e6c",
+    "/FAQ-new-world/assets/icons/icon-192x192.png": "15c4180454633880d98674aa7394656196c91584",
+    "/FAQ-new-world/assets/icons/icon-384x384.png": "94a915751ef6c9282df9aea405ad679230631814",
+    "/FAQ-new-world/assets/icons/icon-512x512.png": "1de182f76f7329dfa8f9fcdd1fdcdd695bea6a99",
+    "/FAQ-new-world/assets/icons/icon-72x72.png": "aa88a6096bd973be7f6d7a5489bfa6bc2463f8c4",
+    "/FAQ-new-world/assets/icons/icon-96x96.png": "7fb8f59c30ce2ff12c700321a0b39e14b3dc8f95",
+    "/FAQ-new-world/chunk-OVAMM3VU.js": "f0c825274cad1773b79fa4ec3c15b0e644d4c262",
+    "/FAQ-new-world/chunk-VSIMYE2I.js": "93d14e35e91565f529bcef3a2d1e2edc880cdc3a",
+    "/FAQ-new-world/favicon.ico": "9c39f434fe1261f68c5e3eefdf734630d99c5670",
+    "/FAQ-new-world/index.html": "86aaf7480b42869b531fe4254f7b53be7bfadc11",
+    "/FAQ-new-world/main-TS5BHVNG.js": "be0a8e996b55d032ac47addf030fe25d717aa073",
+    "/FAQ-new-world/manifest.webmanifest": "bdb3c53bc18ed72e6d8a08ba42073eb68bc34219",
+    "/FAQ-new-world/polyfills-S3BTP7ME.js": "893d641030c187f109c667de1b0a73a03095fa3b",
+    "/FAQ-new-world/styles-4BEHK6JF.css": "c9494c09b08579a3e948f176ae37735cbb36aad6"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
