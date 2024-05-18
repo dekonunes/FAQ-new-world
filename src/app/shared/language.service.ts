@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject } from 'rxjs';
+import { BehaviorSubject, Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
@@ -10,7 +10,8 @@ export class LanguageService {
 
   constructor() {}
 
-  changeLanguage(language: string) {
+  changeLanguage(language: string): Observable<string> {
     this.languageSource.next(language);
+    return this.languageSource.asObservable();
   }
 }

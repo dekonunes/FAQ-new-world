@@ -4,7 +4,8 @@
       class="panel"
       *ngFor="let accordion of accordions"
       [expanded]="
-        accordion?.index?.toLowerCase() === params['item'].toLowerCase()
+        paramsRouter['item'] &&
+        accordion?.index?.toLowerCase() === paramsRouter['item']?.toLowerCase()
       "
     >
       <mat-expansion-panel-header>

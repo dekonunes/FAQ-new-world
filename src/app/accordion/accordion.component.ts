@@ -27,14 +27,13 @@ export class AccordionComponent implements OnInit {
   accordions: Accordion[] | undefined;
   language: string = '';
   private subscription = new Subscription();
-  params: Params;
+  paramsRouter: Params = {};
 
   constructor(
     private languageService: LanguageService,
     private accordionService: AccordionService,
     private route: ActivatedRoute
   ) {
-    this.params = { item: 'supermarket' };
     this.subscription = this.languageService.currentLanguage.subscribe(
       (language) => {
         this.language = language;
@@ -44,22 +43,19 @@ export class AccordionComponent implements OnInit {
 
   ngOnInit() {
     this.subscription.add(
-      this.languageService.currentLanguage
-        .pipe(
-          switchMap((language) => {
-            return this.route.queryParams.pipe(
-              switchMap((params) => {
-                const currentLanguage = params['lg'] || language || 'en-US';
-                return this.accordionService.getAccordionData(currentLanguage);
-              })
-            );
-          })
-        )
-        .subscribe({
+      this.languageService.currentLanguage.subscribe((language) => {
+        this.accordionService.getAccordionData(language).subscribe({
           next: (data) => (this.accordions = data),
           error: (error) =>
             console.error('Error fetching accordion data:', error),
-        })
+        });
+      })
+    );
+
+    this.subscription.add(
+      this.route.queryParams.subscribe(
+        (params) => (this.paramsRouter = { item: params['item'] })
+      )
     );
   }
 
