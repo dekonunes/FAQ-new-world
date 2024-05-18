@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1715596286462,
+  "timestamp": 1716012138020,
   "index": "https://dekonunes.github.io/FAQ-new-world/index.html",
   "assetGroups": [
     {
@@ -15,7 +15,7 @@
         "https://dekonunes.github.io/FAQ-new-world/chunk-VSIMYE2I.js",
         "https://dekonunes.github.io/FAQ-new-world/favicon.ico",
         "https://dekonunes.github.io/FAQ-new-world/index.html",
-        "https://dekonunes.github.io/FAQ-new-world/main-VBNZRZUT.js",
+        "https://dekonunes.github.io/FAQ-new-world/main-S6VFEAJV.js",
         "https://dekonunes.github.io/FAQ-new-world/manifest.webmanifest",
         "https://dekonunes.github.io/FAQ-new-world/polyfills-S3BTP7ME.js",
         "https://dekonunes.github.io/FAQ-new-world/styles-4BEHK6JF.css"
@@ -55,8 +55,8 @@
     "https://dekonunes.github.io/FAQ-new-world/chunk-OVAMM3VU.js": "f0c825274cad1773b79fa4ec3c15b0e644d4c262",
     "https://dekonunes.github.io/FAQ-new-world/chunk-VSIMYE2I.js": "93d14e35e91565f529bcef3a2d1e2edc880cdc3a",
     "https://dekonunes.github.io/FAQ-new-world/favicon.ico": "9c39f434fe1261f68c5e3eefdf734630d99c5670",
-    "https://dekonunes.github.io/FAQ-new-world/index.html": "4e1b7a28dbfdffaae4d60463aefb20ae4c076c55",
-    "https://dekonunes.github.io/FAQ-new-world/main-VBNZRZUT.js": "8158beafddbf485ec926fcd4dc345f9907dffef0",
+    "https://dekonunes.github.io/FAQ-new-world/index.html": "46c4be1ff0b6722d665a194165e54d1ea1925916",
+    "https://dekonunes.github.io/FAQ-new-world/main-S6VFEAJV.js": "0a19f0528ce4f3ca542ef3ac926b6868e3708156",
     "https://dekonunes.github.io/FAQ-new-world/manifest.webmanifest": "bdb3c53bc18ed72e6d8a08ba42073eb68bc34219",
     "https://dekonunes.github.io/FAQ-new-world/polyfills-S3BTP7ME.js": "893d641030c187f109c667de1b0a73a03095fa3b",
     "https://dekonunes.github.io/FAQ-new-world/styles-4BEHK6JF.css": "c9494c09b08579a3e948f176ae37735cbb36aad6"
