@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1717578573877,
+  "timestamp": 1717578918919,
   "index": "/FAQ-new-world/index.html",
   "assetGroups": [
     {
@@ -15,7 +15,7 @@
         "/FAQ-new-world/chunk-VSIMYE2I.js",
         "/FAQ-new-world/favicon.ico",
         "/FAQ-new-world/index.html",
-        "/FAQ-new-world/main-EGHAJK3V.js",
+        "/FAQ-new-world/main-I3P5K2TX.js",
         "/FAQ-new-world/manifest.webmanifest",
         "/FAQ-new-world/polyfills-S3BTP7ME.js",
         "/FAQ-new-world/styles-4BEHK6JF.css"
@@ -55,8 +55,8 @@
     "/FAQ-new-world/chunk-OVAMM3VU.js": "f0c825274cad1773b79fa4ec3c15b0e644d4c262",
     "/FAQ-new-world/chunk-VSIMYE2I.js": "93d14e35e91565f529bcef3a2d1e2edc880cdc3a",
     "/FAQ-new-world/favicon.ico": "9c39f434fe1261f68c5e3eefdf734630d99c5670",
-    "/FAQ-new-world/index.html": "adfe6c5b6698a8b5305e6c281f2eaae19e0a0ccd",
-    "/FAQ-new-world/main-EGHAJK3V.js": "78aef771bf085558a52b47e8c26cf09a3733e948",
+    "/FAQ-new-world/index.html": "f68ee9d5f21814437e3abfd68ee8f8a82351f16b",
+    "/FAQ-new-world/main-I3P5K2TX.js": "0f4d8660ccf9a25d32a1a22681326a6704837b1d",
     "/FAQ-new-world/manifest.webmanifest": "bdb3c53bc18ed72e6d8a08ba42073eb68bc34219",
     "/FAQ-new-world/polyfills-S3BTP7ME.js": "893d641030c187f109c667de1b0a73a03095fa3b",
     "/FAQ-new-world/styles-4BEHK6JF.css": "c9494c09b08579a3e948f176ae37735cbb36aad6"
