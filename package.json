@@ -5,6 +5,8 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:prod": "ng build --configuration production",
+    "deploy": "echo 'faq-australia.com' > dist/faq-new-world/browser/CNAME && npx angular-cli-ghpages --dir=dist/faq-new-world/browser",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:FAQ-new-world": "node dist/faq-new-world/server/server.mjs",

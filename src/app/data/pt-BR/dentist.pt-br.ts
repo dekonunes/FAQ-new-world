@@ -1,6 +1,7 @@
 import { Accordion } from '../../accordion/accordion.interface';
 
 export const dentist: Accordion = {
+  index: 'dentist',
   title: 'Dentista',
   contents: [
     {

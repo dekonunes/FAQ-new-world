@@ -7,8 +7,9 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import { AccordionService } from './accordion.service';
 import { Accordion } from './accordion.interface';
 import { CommonModule } from '@angular/common';
-import { Subscription, switchMap } from 'rxjs';
+import { Subscription } from 'rxjs';
 import { ActivatedRoute, Params } from '@angular/router';
+import { GoogleAnalyticsService } from '../shared/google-analytics.service';
 
 @Component({
   selector: 'app-accordion',
@@ -32,7 +33,8 @@ export class AccordionComponent implements OnInit {
   constructor(
     private languageService: LanguageService,
     private accordionService: AccordionService,
-    private route: ActivatedRoute
+    private route: ActivatedRoute,
+    private gaService: GoogleAnalyticsService
   ) {
     this.subscription = this.languageService.currentLanguage.subscribe(
       (language) => {
@@ -57,6 +59,13 @@ export class AccordionComponent implements OnInit {
         (params) => (this.paramsRouter = { item: params['item'] })
       )
     );
+  }
+
+  gaTrack(category: string, subcategory?: string) {
+    const eventLabel = `${category} - ${
+      subcategory ? `${subcategory} - ` : ''
+    } ${this.language}`;
+    this.gaService.event('accordion', 'accordion', 'click', eventLabel);
   }
 
   ngOnDestroy() {

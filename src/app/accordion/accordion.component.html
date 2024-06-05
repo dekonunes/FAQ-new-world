@@ -7,13 +7,14 @@
         paramsRouter['item'] &&
         accordion?.index?.toLowerCase() === paramsRouter['item']?.toLowerCase()
       "
+      (click)="gaTrack(accordion?.index || '')"
     >
       <mat-expansion-panel-header>
         <mat-panel-title>{{ accordion.title }}</mat-panel-title>
       </mat-expansion-panel-header>
       <div class="mat-expansion-panel-body-custom">
         <mat-accordion class="example-headers-align">
-          <mat-expansion-panel *ngFor="let content of accordion.contents">
+          <mat-expansion-panel *ngFor="let content of accordion.contents" (click)="gaTrack(accordion?.index || '', content.title)">
             <mat-expansion-panel-header>
               {{ content.title }}
             </mat-expansion-panel-header>

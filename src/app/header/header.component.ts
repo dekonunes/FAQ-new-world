@@ -7,7 +7,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { LanguageService } from '../shared/language.service';
 import { ActivatedRoute, Params } from '@angular/router';
-
+import { GoogleAnalyticsService } from '../shared/google-analytics.service';
 @Component({
   selector: 'app-header',
   standalone: true,
@@ -27,7 +27,8 @@ export class HeaderComponent implements OnInit {
 
   constructor(
     private languageService: LanguageService,
-    private route: ActivatedRoute
+    private route: ActivatedRoute,
+    private gaService: GoogleAnalyticsService
   ) {}
 
   ngOnInit() {
@@ -36,6 +37,9 @@ export class HeaderComponent implements OnInit {
         switchMap((params: Params) => {
           const currentLanguage = params['lg'] || 'en-US';
           this.selectedLanguage = currentLanguage;
+          if (params['lg']) {
+            this.gaService.event('language_change', 'initial', currentLanguage);
+          }
           return this.languageService.changeLanguage(currentLanguage);
         })
       )
@@ -44,6 +48,7 @@ export class HeaderComponent implements OnInit {
 
   onLanguageChange(newLanguage: string): void {
     this.selectedLanguage = newLanguage;
+    this.gaService.event('language_change', 'click', newLanguage);
     this.languageService.changeLanguage(newLanguage).subscribe();
   }
 }
