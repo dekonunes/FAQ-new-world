@@ -14,12 +14,14 @@
       </mat-expansion-panel-header>
       <div class="mat-expansion-panel-body-custom">
         <mat-accordion class="example-headers-align">
+          <p>{{ accordion.description }}</p>
           <mat-expansion-panel *ngFor="let content of accordion.contents" (click)="gaTrack(accordion?.index || '', content.title)">
             <mat-expansion-panel-header>
               {{ content.title }}
             </mat-expansion-panel-header>
             <div>
-              <p [innerHTML]="content.data" id="{{ content.title }}"></p>
+              
+              <div [innerHTML]="content.data" id="{{ content.title }}"></div>
               <cite class="flex-end" *ngIf="content.author">
                 <a href="{{ content.author.link }}" target="_blank">{{
                   content.author.name

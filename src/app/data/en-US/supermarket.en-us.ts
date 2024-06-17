@@ -80,8 +80,11 @@ export const supermarket: Accordion = {
     },
     {
       title: 'Marley Spoon & Hello Fresh',
-      data: `Simplifying home cooking by delivering at home weekly boxes containing step-by-step recipes along with the necessary ingredients pre-measured. Its service is designed to cater to individuals, couples, and families who are looking for an easy and convenient way to cook home meals. <br><br>
-        <li>Customers can choose from a variety of plans based on their dietary preferences, such as family-friendly, low-calorie, or vegetarian, and select the number of meals and servings per week.</li>`,
+      data: `Simplifying home cooking by delivering at home weekly boxes containing step-by-step recipes along with the necessary ingredients pre-measured. Its service is designed to cater to individuals, couples, and families who are looking for an easy and convenient way to cook home meals.
+            <br><br>
+            <ul>
+              <li>Customers can choose from a variety of plans based on their dietary preferences, such as family-friendly, low-calorie, or vegetarian, and select the number of meals and servings per week.</li>
+            </ul>`,
       links: [
         {
           title: 'Discount coupom',

@@ -1,6 +1,7 @@
 import { Accordion } from '../../accordion/accordion.interface';
 
 export const AlcoholicDrinks: Accordion = {
+  index: 'alcoholicDrinks',
   title: 'Alcoholic Drinks',
   contents: [
     {
@@ -19,8 +20,8 @@ export const AlcoholicDrinks: Accordion = {
     {
       title: 'Bottleshops',
       data: `Bottle shops are usually located near supermarkets, with the exception of Aldi, where you can purchase alcohol inside the store. However, you will need to choose a specific cashier that is authorized to handle alcoholic drink transactions. <br><br>
-      <li>BWS: This is the Woolworths bottle shop.</li>
-      <li>Liquorland: This is the Coles bottle shop.</li>`,
+      <ul><li>BWS: This is the Woolworths bottle shop.</li>
+      <li>Liquorland: This is the Coles bottle shop.</li></ul>`,
     },
     {
       title: 'Operating Hours',

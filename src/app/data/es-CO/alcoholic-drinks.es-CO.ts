@@ -1,6 +1,7 @@
 import { Accordion } from '../../accordion/accordion.interface';
 
 export const AlcoholicDrinks: Accordion = {
+  index: 'alcoholicDrinks',
   title: 'Bebidas Alcohólicas',
   contents: [
     {

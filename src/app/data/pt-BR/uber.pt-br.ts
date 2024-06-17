@@ -1,6 +1,7 @@
 import { Accordion } from '../../accordion/accordion.interface';
 
 export const uber: Accordion = {
+  index: 'uberEats',
   title: 'Uber Eats',
   contents: [
     {

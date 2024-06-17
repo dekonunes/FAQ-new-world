@@ -1,8 +1,9 @@
 import { Links } from '../shared/links';
 
 export interface Accordion {
-  index?: string;
+  index: string;
   title: string;
+  description?: string;
   data?: string;
   author?: {
     name: string;
@@ -10,5 +11,5 @@ export interface Accordion {
   };
   image?: string;
   links?: Links[];
-  contents?: Accordion[];
+  contents?: Omit<Accordion, 'index'>[];
 }

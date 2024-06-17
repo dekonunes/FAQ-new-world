@@ -1,7 +1,7 @@
 import { Accordion } from '../../accordion/accordion.interface';
 
 export const driveLicence: Accordion = {
-  index: 'drive-licence',
+  index: 'driveLicence',
   title: 'ड्राइविंग लाइसेंस',
   contents: [
     {

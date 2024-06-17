@@ -2,7 +2,7 @@
 @import "app/styles/base/utilities";
 
 :root {
-  --mat-option-selected-state-label-text-color: #ff0000;
+  --mat-option-selected-state-label-text-color: #5872ff;
 }
 
 @keyframes gradientBG {
@@ -55,7 +55,7 @@ body {
 
 ol,
 ul {
-  list-style: none;
+  margin-left: 10px;
 }
 
 a,
