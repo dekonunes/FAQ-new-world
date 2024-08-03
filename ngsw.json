@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1717728250440,
+  "timestamp": 1722674906138,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -15,10 +15,10 @@
         "/chunk-VSIMYE2I.js",
         "/favicon.ico",
         "/index.html",
-        "/main-BVROQ7G6.js",
+        "/main-5KGIIN23.js",
         "/manifest.webmanifest",
         "/polyfills-S3BTP7ME.js",
-        "/styles-TN7QAHBB.css"
+        "/styles-Z7VICLMT.css"
       ],
       "patterns": []
     },
@@ -30,6 +30,18 @@
         "ignoreVary": true
       },
       "urls": [
+        "/assets/icons/apple-touch-icon-114x114.png",
+        "/assets/icons/apple-touch-icon-120x120.png",
+        "/assets/icons/apple-touch-icon-144x144.png",
+        "/assets/icons/apple-touch-icon-152x152.png",
+        "/assets/icons/apple-touch-icon-180x180.png",
+        "/assets/icons/apple-touch-icon-57x57.png",
+        "/assets/icons/apple-touch-icon-60x60.png",
+        "/assets/icons/apple-touch-icon-72x72.png",
+        "/assets/icons/apple-touch-icon-76x76.png",
+        "/assets/icons/apple-touch-icon.png",
+        "/assets/icons/favicon-16x16.png",
+        "/assets/icons/favicon-32x32.png",
         "/assets/icons/icon-128x128.png",
         "/assets/icons/icon-144x144.png",
         "/assets/icons/icon-152x152.png",
@@ -37,29 +49,53 @@
         "/assets/icons/icon-384x384.png",
         "/assets/icons/icon-512x512.png",
         "/assets/icons/icon-72x72.png",
-        "/assets/icons/icon-96x96.png"
+        "/assets/icons/icon-96x96.png",
+        "/assets/icons/launcher-icon-0-75x.png",
+        "/assets/icons/launcher-icon-1-5x.png",
+        "/assets/icons/launcher-icon-1x.png",
+        "/assets/icons/launcher-icon-2x.png",
+        "/assets/icons/launcher-icon-3x.png",
+        "/assets/icons/launcher-icon-4x.png"
       ],
       "patterns": []
     }
   ],
   "dataGroups": [],
   "hashTable": {
-    "/assets/icons/icon-128x128.png": "f912963bdc6d5a38d8f1dd0afbaab2ce8d657acb",
-    "/assets/icons/icon-144x144.png": "b155fd5f2fd5d2ea7760721063003c4cd95fd783",
-    "/assets/icons/icon-152x152.png": "eae6e0f0c8afb8aaae339e2a569b43e9238e5e6c",
-    "/assets/icons/icon-192x192.png": "15c4180454633880d98674aa7394656196c91584",
-    "/assets/icons/icon-384x384.png": "94a915751ef6c9282df9aea405ad679230631814",
-    "/assets/icons/icon-512x512.png": "1de182f76f7329dfa8f9fcdd1fdcdd695bea6a99",
-    "/assets/icons/icon-72x72.png": "aa88a6096bd973be7f6d7a5489bfa6bc2463f8c4",
-    "/assets/icons/icon-96x96.png": "7fb8f59c30ce2ff12c700321a0b39e14b3dc8f95",
+    "/assets/icons/apple-touch-icon-114x114.png": "77a29faf017e461a91b8e5ed733f27b4c44fa6db",
+    "/assets/icons/apple-touch-icon-120x120.png": "668e575f06071ecf3afb90bdbb597cf2e77ca48b",
+    "/assets/icons/apple-touch-icon-144x144.png": "93f6e91ccf2bafb7129c6daa455ba7cd3ca2ea89",
+    "/assets/icons/apple-touch-icon-152x152.png": "448910941d76abf21334d5f4ff4a16151cde787d",
+    "/assets/icons/apple-touch-icon-180x180.png": "3f3c10bbaf2776c52c5d6c8e0fd658ab4172d5c7",
+    "/assets/icons/apple-touch-icon-57x57.png": "b5416ec6c5556bf09cce0e07eeb89fbecd2deaf0",
+    "/assets/icons/apple-touch-icon-60x60.png": "72d9e709b2ca04fc77a570c9d682584a560fff8b",
+    "/assets/icons/apple-touch-icon-72x72.png": "d1c9a5379538d81e361af02e3af1ad8bb4df15c4",
+    "/assets/icons/apple-touch-icon-76x76.png": "3a79f1f0a4d1b3acb858312912743d3f1bea2c83",
+    "/assets/icons/apple-touch-icon.png": "3f3c10bbaf2776c52c5d6c8e0fd658ab4172d5c7",
+    "/assets/icons/favicon-16x16.png": "f089b83775b8e5c6b51ef7db784422a4aa1d7e51",
+    "/assets/icons/favicon-32x32.png": "8ce011e9599752842f838c6ba167d465e0b675cf",
+    "/assets/icons/icon-128x128.png": "364f3c2fcd9d08442e97ca37001eee189df4de87",
+    "/assets/icons/icon-144x144.png": "05ed1fcee7e215f7e908126e50dbe95c7544c050",
+    "/assets/icons/icon-152x152.png": "1ac07b4d866e5a7a388ffcc30c49de5a3c8c6d7d",
+    "/assets/icons/icon-192x192.png": "a43d0a0ed0c48f153e738bbfc7229cfab439721d",
+    "/assets/icons/icon-384x384.png": "a7fbd7c87b4eecae155c5c72fd298dacad761e68",
+    "/assets/icons/icon-512x512.png": "f8e8faa49f7960f5f43936663f1cd1be15bc701f",
+    "/assets/icons/icon-72x72.png": "4b8cb27276c9b84c8600f714e9d42b95791afd09",
+    "/assets/icons/icon-96x96.png": "6027f00557891c0799935c0373c1e7f340fd153f",
+    "/assets/icons/launcher-icon-0-75x.png": "f32efc15768016c1e258d56d41f697f100dc20f1",
+    "/assets/icons/launcher-icon-1-5x.png": "b90970ed5572bd9729d6594031a2eb9f0d209493",
+    "/assets/icons/launcher-icon-1x.png": "c4a007c7f3973ead7cb65172a361f4810f89e37c",
+    "/assets/icons/launcher-icon-2x.png": "58acca8a145094b1e1a43f9dbf377f4997ba5170",
+    "/assets/icons/launcher-icon-3x.png": "93f6e91ccf2bafb7129c6daa455ba7cd3ca2ea89",
+    "/assets/icons/launcher-icon-4x.png": "eda52353321d9dd1590f1f4f672371d6fe950b55",
     "/chunk-OVAMM3VU.js": "f0c825274cad1773b79fa4ec3c15b0e644d4c262",
     "/chunk-VSIMYE2I.js": "93d14e35e91565f529bcef3a2d1e2edc880cdc3a",
-    "/favicon.ico": "9c39f434fe1261f68c5e3eefdf734630d99c5670",
-    "/index.html": "ee24c5ac03e810675c08030706c90506f61118c2",
-    "/main-BVROQ7G6.js": "ad79a130cdcf279f81919e22642b63d5175ea3a3",
-    "/manifest.webmanifest": "bdb3c53bc18ed72e6d8a08ba42073eb68bc34219",
+    "/favicon.ico": "a97da755aa76bf7933eb6c81a7bb2af2a09001e4",
+    "/index.html": "a3cfaad404d9c7cc6a4834cd9eeb4f3b579b0857",
+    "/main-5KGIIN23.js": "eb3a2737b2e3e8cc8415fd7a9dd91238c32e8acb",
+    "/manifest.webmanifest": "5a2deca826934489bb650c038412b215b68bde8e",
     "/polyfills-S3BTP7ME.js": "893d641030c187f109c667de1b0a73a03095fa3b",
-    "/styles-TN7QAHBB.css": "f97f87fbc6c2c97b860d3154f837fdb18351b7af"
+    "/styles-Z7VICLMT.css": "fc7d1f89d36acafec17e7abe2d44ff05fbea640e"
   },
   "navigationUrls": [
     {
